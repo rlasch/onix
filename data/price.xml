@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Price>
-  <PriceTypeCode>02</PriceTypeCode>
-  <PriceAmount>7.5</PriceAmount>
-</Price>
+  <PriceTypeCode>01</PriceTypeCode>
+  <DiscountCoded>
+	<DiscountCodeType>02</DiscountCodeType>
+	<DiscountCode>P</DiscountCode>
+  </DiscountCoded>
+  <PriceAmount>44.99</PriceAmount>
+  <CurrencyCode>USD</CurrencyCode>
+  <CountryCode>US</CountryCode>
+  <CountryCode>GB</CountryCode>
+</Price>	

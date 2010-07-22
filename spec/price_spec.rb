@@ -19,8 +19,8 @@ context "ONIX::Price" do
   specify "should provide read access to first level attibutes" do
     p = ONIX::Price.from_xml(@root.to_s)
 
-    p.price_type_code.should eql(2)
-    p.price_amount.should eql(BigDecimal.new("7.5"))
+    p.price_type_code.should eql(1)
+    p.price_amount.should eql(BigDecimal.new("44.99"))
   end
 
   specify "should provide write access to first level attibutes" do
@@ -29,9 +29,8 @@ context "ONIX::Price" do
     p.price_type_code = 1
     p.to_xml.to_s.include?("<PriceTypeCode>01</PriceTypeCode>").should be_true
 
-    p.price_amount = BigDecimal.new("7.5")
-    p.to_xml.to_s.include?("<PriceAmount>7.5</PriceAmount>").should be_true
-
+    p.price_amount = BigDecimal.new("44.99")
+    p.to_xml.to_s.include?("<PriceAmount>44.99</PriceAmount>").should be_true
   end
 
 end
